@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    color: #000;
+    text-align: center;
+    text-decoration:underline;
+}
+nav {
+    position: relative; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+nav a {
+    text-decoration: none;
+    color: rgb(212, 0, 255);
+}
+nav > ul {
+    background-color: #222;
+    list-style-type: none;
+    height: 40px;
+    display: flex;
+}
+nav > ul > li {
+    width: 100%;
+}
+nav > ul > li a,li {
+    display: block;
+    text-align: center;
+    line-height: 40px;
+}
+nav > ul > li.submenu > ul {
+    display: none;
+    list-style-type: none;
+}
+nav > ul > li:hover a {
+    background-color: #222;
+    color: rgb(212, 0, 255);
+}
+nav > ul > li:hover li{
+    background-color: #222;
+    color: rgb(212, 0, 255);
+}
+nav > ul > li.submenu:hover > ul {
+    display: block;
+}
+nav > ul > li.submenu > ul > li:hover a {
+    background-color: rgb(212, 0, 255);
+    color: #222;
+}
+
+footer { 
+    width: 100%; 
+    background-color: #000;
+    color: rgb(212, 0, 255);
+}
+
+html {
+    font-size: 30px;
+    font-family: 'Work Sans', sans-serif;
+    background: hsla(197, 100%, 63%, 1);
+    background: linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", endColorstr="#E81CFF", GradientType=1 );
+}
+
+
+#neon {
+    background-color: #000;
+    color: #fff;
+    padding: 2em;
+    text-shadow:
+        0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #420b3b,
+        0 0 70px #420b3b,
+        0 0 80px #420b3b,
+        0 0 100px #420b3b,
+        0 0 150px #420b3b;
+}
+
+
+h1 {
+    font-size: 3.5em;
+    text-align: center;
+    padding: 1.5em;
+    font-weight: 100;
+    background: hsla(197, 100%, 63%, 1);
+    background: linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", endColorstr="#E81CFF", GradientType=1 );
+}
+
+section {
+    height: 250px;
+    font-size: 12px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-attachment: fixed;
+    padding: 2em;
+    border-radius: 8em / 4em;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#seccion1{
+    background-image: url("imagenes/cerebritos.jpg");
+}
+#seccion2 {
+    background-image: url("imagenes/cintitas.jpg");
+    background-attachment: scroll;
+}
+#seccion3 {
+    background-image: url("imagenes/ositos.jpg");
+}
+#seccion4{
+    background-image: url("imagenes/mix.jpg");
+    background-attachment: scroll;
+  
+}
+
+section div {
+   margin: 0 auto;
+   width: 700px;
+}
+section h2 {
+    font-size: 1rem;
+    font-weight: 200;
+}
+section p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.contenedor-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+.contenedor-body{
+    display: flex;
+    justify-content: space-between;
+}
+.columna1{
+    max-width: 400px;
+}
+.columna1 h2{
+    font-size: 30px;
+    color:rgb(212, 0, 255)
+}
+.columna1 p{
+    font-size: 14px;
+    color:#fff;
+    margin-top: 20px;
+}
+.columna2{
+    max-width: 400px;
+}
+.columna2 h2{
+    font-size: 30px;
+    color:rgb(212, 0, 255)
+}
+.row{
+    margin-top: 20px;
+    display: flex;
+}
+.row img{
+    width: 35px;
+    height: 35px;
+}
+.row label{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.contenedor-footer{
+    width: 100%;
+    background-color: #222;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+.copyright{
+    color:#fff;
+    font-weight: bold;
+    font-size: 20px;
+    margin: auto;
+}
+
+#whatsapp{
+    display: inline-block;
+    border-radius: 20px;
+    background-image: url("imagenes/whatsapp.png");
+    height: 90px;
+    width: 90px;
+    position: fixed;
+    bottom: 20px;
+    right: 8px;
+    text-decoration: none; 
+}
+#whatsapp span{
+    background-color: hsl(142, 70%, 40%);
+    color: #fff;
+    padding: 5px;
+    border-radius: 2px;
+    position: relative;
+    bottom: 50px;
+    right: 65px; 
+}

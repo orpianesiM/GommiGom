@@ -1,0 +1,78 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: relative; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+nav a {
+    text-decoration: none;
+    color: rgb(212, 0, 255);
+    font-size: 30px;
+}
+nav > ul {
+    background-color: #222;
+    list-style-type: none;
+    height: 40px;
+    display: flex;
+}
+nav > ul > li {
+    width: 100%;
+}
+nav > ul > li a,li {
+    display: block;
+    text-align: center;
+    line-height: 40px;
+}
+nav > ul > li.submenu > ul {
+    display: none;
+    list-style-type: none;
+}
+nav > ul > li:hover a {
+    background-color: #222;
+    color: rgb(212, 0, 255);
+}
+nav > ul > li:hover li{
+    background-color: #222;
+    color: rgb(212, 0, 255);
+}
+nav > ul > li.submenu:hover > ul {
+    display: block;
+}
+nav > ul > li.submenu > ul > li:hover a {
+    background-color: rgb(212, 0, 255);
+    color: #222;
+}
+
+#neon {
+    background-color: #000;
+    color: #fff;
+    padding: 2em;
+    text-shadow:
+        0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #420b3b,
+        0 0 70px #420b3b,
+        0 0 80px #420b3b,
+        0 0 100px #420b3b,
+        0 0 150px #420b3b;
+}
+
+
+h1 {
+    font-size: 3.5em;
+    text-align: center;
+    padding: 1.5em;
+    font-weight: 100;
+    background: hsla(197, 100%, 63%, 1);
+    background: linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", endColorstr="#E81CFF", GradientType=1 );
+}
